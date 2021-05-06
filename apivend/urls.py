@@ -19,11 +19,13 @@ from django.conf.urls import include
 from rest_framework import routers
 from vendedores.api.viewsets import vendedoresViewSet
 from cidades.api.viewsets import cidadesViewSet
+from vendedores_cidades.api.viewsets import Vendedores_cidadesViewSet
 
 #criando rotas
 router = routers.DefaultRouter()
 router.register(r'vendedores', vendedoresViewSet)
 router.register(r'cidades', cidadesViewSet)
+router.register(r'vendedores_cidades', Vendedores_cidadesViewSet)
 
 
 

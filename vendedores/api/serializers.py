@@ -5,7 +5,7 @@ from cidades.api.serializers import cidadesSerializer
 #trazendo os dados
 class vendedoresSerializer(ModelSerializer):
     #trazendo os dados de cidades em uma relacionaento mantytomany
-    vendedores_cidades = cidadesSerializer(many=True)
+    #vendedores_cidades = cidadesSerializer(many=True)
     class Meta:
         model = Vendedores
-        fields = ('id_vendedor','nome','email','status','vendedores_cidades')
+        fields = ('id_vendedor','nome','email','status')

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'vendedores',
     'cidades',
+    'vendedores_cidades',
     'django_filters',
 ]
 
